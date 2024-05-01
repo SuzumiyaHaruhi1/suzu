@@ -1,1 +1,1 @@
-# suzu.github.io
+# CTF Writeups
