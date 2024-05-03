@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Page</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="posts">
+        <div class="home">
+		<img src="./icons/skull-svgrepo-com.svg" alt="Home" style="height: 35px; width: 35px; margin-right: 10px;">
+            <h2><a href="https://suzumiyaharuhi1.github.io/">MAIN PAGE</a>
+			</h2>
+        </div>
+    </div>
+    <header>
+        <h1>Amateurs CTF 2024</h1>
+    </header>
+    <div class="post" id="crypto-category">
+    <h2><a href="javascript:void(0);" onclick="toggleVisibility('crypto-links')">Crypto</a></h2>
+		<div id="crypto-links" class="category-content hidden">
+			<ul>
+				<li class="file-item"><a href="file1.html">File 1</a></li>
+				<li class="file-item"><a href="file2.html">File 2</a></li>
+				<li class="file-item"><a href="file3.html">File 3</a></li>
+				<!-- More files can be added here -->
+			</ul>
+		</div>
+	</div>
+
+	<div class="post" id="pwn-category">
+		<h2><a href="javascript:void(0);" onclick="toggleVisibility('pwn-links')">Pwn</a></h2>
+		<div id="pwn-links" class="category-content hidden">
+			<ul>
+				<li class="file-item"><a href="file4.html">File 4</a></li>
+				<li class="file-item"><a href="file5.html">File 5</a></li>
+				<li class="file-item"><a href="file6.html">File 6</a></li>
+				<!-- More files can be added here -->
+			</ul>
+		</div>
+	</div>
+
+
+<script>
+function toggleVisibility(id) {
+    var categories = document.querySelectorAll('.category-content');
+    categories.forEach(function(element) {
+        if (element.id === id) {
+            element.style.display = (element.style.display === 'block') ? 'none' : 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>
