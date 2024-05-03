@@ -1,14 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #333;
     color: #333;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 20px;
 }
 
 header {
     background-color: #333;
+    font-family: Arial, sans-serif;
     color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -17,25 +23,157 @@ header h1 {
 }
 
 .posts {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .post {
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+    display: flex;
+    /* Динамичный контейнер */
+    flex-direction: column;
+    /* Вертикальное размещение элементов */
+    justify-content: left;
+    /* Горизонтальное размещение элементов */
+    height: 30px;
+    /* Set a specific height for your post container */
+    background-color: #666;
+    /* Фон блока */
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+    /* Тень вокруг каждого блока */
+    border: 3px solid #191918;
+    /* Рамки вокруг блока */
+    margin: 20px 100px;
     padding: 20px;
+    color: white;
+    text-align: left;
+    /* Выравнивание текста по горизонтали */
 }
 
 .post h2 {
     margin-top: 0;
 }
 
+
 .post h2 a {
-    color: #333;
+    cursor: pointer;
+    color: white;
     text-decoration: none;
+}
+
+.post h2 a:hover {
+    text-decoration: underline;
+    color: #A9FFF6;
 }
 
 .post p {
     color: #666;
+}
+
+.home {
+    display: flex;
+    /* Динамичный контейнер */
+    flex-direction: column;
+    /* Вертикальное размещение элементов */
+    justify-content: left;
+    /* Горизонтальное размещение элементов */
+    height: 100px;
+    /* Set a specific height for your post container */
+    margin: 0px 0px;
+    padding: 0px;
+    color: white;
+    text-align: left;
+    /* Выравнивание текста по горизонтали */
+}
+
+.home h2 {
+    margin-top: 0;
+}
+
+
+.home h2 a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    top: -30px;
+    left: 48px;
+    position: relative;
+    font-size: 20px;
+}
+
+
+
+.home h2 a:hover {
+    text-decoration: underline;
+    color: #A9FFF6;
+}
+
+.home p {
+    color: #666;
+}
+
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #333;
+    /* Dark background */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    padding: 10px 20px;
+    /* Padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #555;
+    /* Lighter background on hover */
+}
+
+.category {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 8px;
+    /* Rounded corners */
+    color: white;
+}
+
+.category-content {
+    background-color: #444;
+    /* Darker background for file list */
+    border: 1px solid #aaa;
+    /* Slightly lighter border than category */
+    border-radius: 5px;
+    /* Slightly less rounded corners than category */
+    padding: 10px;
+    margin-top: 5px;
+    /* Close proximity to category */
+    display: none;
+    /* Start hidden */
+}
+
+.file-item {
+    padding: 5px;
+    /* Smaller padding for file items */
+    margin: 3px 0;
+    /* Smaller margin for a compact list */
+}
+
+.file-item a {
+    color: #DDDDDD;
+    /* Lighter text color for visibility against the dark background */
+    text-decoration: none;
+    /* No underline */
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+    /* Underline on hover for interactivity */
 }
