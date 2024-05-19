@@ -1,0 +1,235 @@
+<html>
+<head>
+  <title>assume</title>
+  <style>
+    
+:root {
+  --default-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: 'Source Code Pro', monospace;
+  --background-primary: #ffffff;
+  --background-modifier-border: #ddd;
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --text-muted: #888888;
+  --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --text-error: #E4374B;
+  --background-primary-alt: '#fafafa';
+  --background-accent: '';
+  --interactive-accent: hsl( 254,  80%, calc( 68% + 2.5%));
+  --background-modifier-error: #E4374B;
+}
+
+    body,input {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+code, kbd, pre {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 1em 0.5em;
+}
+
+table {
+  background: white;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+table thead th,
+table tfoot th {
+  text-align: left;
+  background-color: #eaeaea;
+  color: black;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table td {
+  color: #222222;
+}
+
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"]  .callout-title,
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="help"] .callout-title {
+  background-color: #828ee7;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  background-color: #34bbe6;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  background-color: #a3e048;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  background-color: #49da9a;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  background-color: #f7d038;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="missing"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  background-color: #eb7532;
+}
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  background-color: #e6261f;
+}
+.callout[data-callout="example"] .callout-title {
+  background-color: #d23be7;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  background-color: #aaaaaa;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+svg.svg-icon {
+  height: 18px;
+  width: 18px;
+  stroke-width: 1.75px;
+}
+
+.callout {
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.callout-title {
+  padding: .5em;
+  display: flex;
+  gap: 8px;
+  font-size: inherit;
+  color: black;
+  line-height: 1.3em;
+}
+
+.callout-title-inner {
+  font-weight: bold;
+  color: black;
+}
+
+.callout-content {
+  overflow-x: auto;
+  padding: 0.25em .5em;
+  color: #222222;
+  background-color: white !important;
+}
+
+ul.contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.contains-task-list ul.contains-task-list {
+  padding-left: 2em;
+}
+
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+.callout-table,
+.callout-table tr,
+.callout-table p {
+  width: 100%;
+  padding: 0;
+}
+
+.callout-table td {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.callout-table p {
+  padding-bottom: 0.5em;
+}
+
+.source-table {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+  </style>
+</head>
+<body>
+<div><p><a href="#CRYPTO" class="tag" target="_blank" rel="noopener">#CRYPTO</a> </p>
+<h1 data-heading="Описание задачи">Описание задачи</h1>
+<hr>
+<blockquote>
+<p>assume for the sake of contradiction that pet the catloe</p>
+</blockquote>
+<blockquote>
+<p><a data-tooltip-position="top" aria-label="https://tjctf-2024.storage.googleapis.com/uploads/1d22c5b1beac01221451479a49c48d1546743a468088cd345f8da7bbed251295/main.sage" rel="noopener" class="external-link" href="https://tjctf-2024.storage.googleapis.com/uploads/1d22c5b1beac01221451479a49c48d1546743a468088cd345f8da7bbed251295/main.sage" target="_blank">main.sage</a><br>
+<a data-tooltip-position="top" aria-label="https://tjctf-2024.storage.googleapis.com/uploads/70877e11250f82945c8f6eba364c83c8b30e9882a21c2f3029cc9eb9c1e558de/log.txt" rel="noopener" class="external-link" href="https://tjctf-2024.storage.googleapis.com/uploads/70877e11250f82945c8f6eba364c83c8b30e9882a21c2f3029cc9eb9c1e558de/log.txt" target="_blank">log.txt</a></p>
+</blockquote>
+<h1 data-heading="Получение флага">Получение флага</h1>
+<hr>
+<p>По сути сам код программы нам не нужен.<br>
+Ну так, если глянуть, то увидим.</p>
+<pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">if</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+	<span class="token comment"># interception occurs</span>
+	c <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> p<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+	send_msg<span class="token punctuation">(</span><span class="token string">"Alice"</span><span class="token punctuation">,</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span> fixed_eve<span class="token punctuation">)</span>
+	send_msg<span class="token punctuation">(</span><span class="token string">"Alice"</span><span class="token punctuation">,</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span> g<span class="token operator">^</span>c<span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	send_msg<span class="token punctuation">(</span><span class="token string">"Alice"</span><span class="token punctuation">,</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span> target_str<span class="token punctuation">[</span>pos<span class="token punctuation">]</span><span class="token punctuation">)</span>
+	send_msg<span class="token punctuation">(</span><span class="token string">"Alice"</span><span class="token punctuation">,</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span> g<span class="token operator">^</span><span class="token punctuation">(</span>a <span class="token operator">*</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Тут в лог будет выведена либо рандомная херня, либо оригинальная буква.<br>
+Если внимательно посмотреть на логи, то увидим <code>lowercase</code> буквы, а также символы. И они образуют флаг.</p>
+<pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'log.txt'</span><span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>  
+    data <span class="token operator">=</span> f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span>  
+  
+result <span class="token operator">=</span> <span class="token string">''</span>  
+res_array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  
+<span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">120</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token keyword">try</span><span class="token punctuation">:</span>  
+        a <span class="token operator">=</span> data<span class="token punctuation">[</span>_<span class="token punctuation">]</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>  
+        res_array<span class="token punctuation">.</span>append<span class="token punctuation">(</span>a<span class="token punctuation">)</span>  
+        <span class="token keyword">if</span> <span class="token keyword">not</span> a<span class="token punctuation">.</span>isupper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  
+            result <span class="token operator">+=</span> a  
+    <span class="token keyword">except</span> IndexError<span class="token punctuation">:</span>  
+        <span class="token keyword">pass</span>  
+  
+tmp <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>  
+flag <span class="token operator">=</span> tmp  
+<span class="token keyword">for</span> c <span class="token keyword">in</span> result<span class="token punctuation">:</span>  
+    <span class="token keyword">if</span> c <span class="token operator">!=</span> tmp<span class="token punctuation">:</span>  
+        flag <span class="token operator">+=</span> c  
+        tmp <span class="token operator">=</span> c  
+  
+<span class="token keyword">print</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span>
+</code></pre>
+<p>Извлекаем только строки с буквами. Затем убираем верхний регистр и флаг готов.</p>
+<pre><code>tjctf{legendary_legendre0xd5109ab3}
+</code></pre></div>
+</body>
+</html>
