@@ -1,0 +1,288 @@
+<html>
+<head>
+  <title>weird_crypto</title>
+  <style>
+    
+:root {
+  --default-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: 'Source Code Pro', monospace;
+  --background-primary: #ffffff;
+  --background-modifier-border: #ddd;
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --text-muted: #888888;
+  --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --text-error: #E4374B;
+  --background-primary-alt: '#fafafa';
+  --background-accent: '';
+  --interactive-accent: hsl( 254,  80%, calc( 68% + 2.5%));
+  --background-modifier-error: #E4374B;
+}
+
+    body,input {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+code, kbd, pre {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 1em 0.5em;
+}
+
+table {
+  background: white;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+table thead th,
+table tfoot th {
+  text-align: left;
+  background-color: #eaeaea;
+  color: black;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table td {
+  color: #222222;
+}
+
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"]  .callout-title,
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="help"] .callout-title {
+  background-color: #828ee7;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  background-color: #34bbe6;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  background-color: #a3e048;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  background-color: #49da9a;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  background-color: #f7d038;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="missing"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  background-color: #eb7532;
+}
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  background-color: #e6261f;
+}
+.callout[data-callout="example"] .callout-title {
+  background-color: #d23be7;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  background-color: #aaaaaa;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+svg.svg-icon {
+  height: 18px;
+  width: 18px;
+  stroke-width: 1.75px;
+}
+
+.callout {
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.callout-title {
+  padding: .5em;
+  display: flex;
+  gap: 8px;
+  font-size: inherit;
+  color: black;
+  line-height: 1.3em;
+}
+
+.callout-title-inner {
+  font-weight: bold;
+  color: black;
+}
+
+.callout-content {
+  overflow-x: auto;
+  padding: 0.25em .5em;
+  color: #222222;
+  background-color: white !important;
+}
+
+ul.contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.contains-task-list ul.contains-task-list {
+  padding-left: 2em;
+}
+
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+.callout-table,
+.callout-table tr,
+.callout-table p {
+  width: 100%;
+  padding: 0;
+}
+
+.callout-table td {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.callout-table p {
+  padding-bottom: 0.5em;
+}
+
+.source-table {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+  </style>
+</head>
+<body>
+<div><p><a href="#CRYPTO" class="tag" target="_blank" rel="noopener">#CRYPTO</a> <a href="#RSA" class="tag" target="_blank" rel="noopener">#RSA</a> <a href="#WIENER" class="tag" target="_blank" rel="noopener">#WIENER</a></p>
+<h1 data-heading="Описание задачи">Описание задачи</h1>
+<hr>
+<blockquote>
+<p>weird crypto hmmm</p>
+</blockquote>
+<blockquote>
+<p><a data-tooltip-position="top" aria-label="https://tjctf-2024.storage.googleapis.com/uploads/3889f951209e0a4786057e426af27d3d6379641fda4379fa63b2ad388e4036c2/output.txt" rel="noopener" class="external-link" href="https://tjctf-2024.storage.googleapis.com/uploads/3889f951209e0a4786057e426af27d3d6379641fda4379fa63b2ad388e4036c2/output.txt" target="_blank">output.txt</a><br>
+<a data-tooltip-position="top" aria-label="https://tjctf-2024.storage.googleapis.com/uploads/f52edecdb1b0e1a6909e1f5feee2116c90ca808845f5374c329466ea02176b23/a.py" rel="noopener" class="external-link" href="https://tjctf-2024.storage.googleapis.com/uploads/f52edecdb1b0e1a6909e1f5feee2116c90ca808845f5374c329466ea02176b23/a.py" target="_blank">a.py</a></p>
+</blockquote>
+<h1 data-heading="Получение флага">Получение флага</h1>
+<hr>
+<p>В коде виден алгоритм шифрования RSA, только с измененными названиями переменных.<br>
+Подправим для общего понимания.</p>
+<pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">from</span> math <span class="token keyword">import</span> lcm
+<span class="token keyword">from</span> Crypto<span class="token punctuation">.</span>Util<span class="token punctuation">.</span>number <span class="token keyword">import</span> bytes_to_long<span class="token punctuation">,</span> getPrime
+
+<span class="token comment"># Чтение флага в бинарном виде и конверация в числовое представление</span>
+<span class="token comment"># Тут заменим на свой флаг</span>
+m <span class="token operator">=</span> bytes_to_long<span class="token punctuation">(</span><span class="token string">b'suzu'</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Генерируем простое число</span>
+oops <span class="token operator">=</span> getPrime<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Генерируем два простых числа</span>
+p <span class="token operator">=</span> getPrime<span class="token punctuation">(</span><span class="token number">512</span><span class="token punctuation">)</span>
+q <span class="token operator">=</span> getPrime<span class="token punctuation">(</span><span class="token number">512</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Высчитываем phi</span>
+phi_n <span class="token operator">=</span> <span class="token punctuation">(</span>p<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span>q<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+
+e <span class="token operator">=</span> <span class="token builtin">pow</span><span class="token punctuation">(</span>oops<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> phi_n<span class="token punctuation">)</span>
+
+
+n <span class="token operator">=</span> p <span class="token operator">*</span> q
+
+<span class="token comment"># Шифруем сообщение</span>
+c <span class="token operator">=</span> <span class="token builtin">pow</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> e<span class="token punctuation">,</span> n<span class="token punctuation">)</span>
+
+<span class="token comment"># Вывод ключевых подсказок</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'admin ='</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'c ='</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'crazy number ='</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
+</code></pre>
+<p>Есть <code>Wieners</code> атака связанная с большим значением экспоненты.<br>
+Атака предназначена для нахождения приватного ключа d в случаях, когда он относительно мал по сравнению с четвертой степенью корня из модуля n.</p>
+<pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">from</span> math <span class="token keyword">import</span> isqrt  
+
+
+<span class="token keyword">def</span> <span class="token function">continued_fraction</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> d<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token triple-quoted-string string">""" Генерация континуированной дроби для n/d. """</span>  
+    <span class="token keyword">while</span> d<span class="token punctuation">:</span>  
+        q <span class="token operator">=</span> n <span class="token operator">//</span> d  
+        <span class="token keyword">yield</span> q  
+        n<span class="token punctuation">,</span> d <span class="token operator">=</span> d<span class="token punctuation">,</span> n <span class="token operator">%</span> d  
+  
+  
+<span class="token keyword">def</span> <span class="token function">convergents</span><span class="token punctuation">(</span>cf<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token triple-quoted-string string">""" Получение сходящихся значений для континуированной дроби. """</span>  
+    nums<span class="token punctuation">,</span> dens <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>  
+    <span class="token keyword">for</span> q <span class="token keyword">in</span> cf<span class="token punctuation">:</span>  
+        nums<span class="token punctuation">.</span>append<span class="token punctuation">(</span>q <span class="token operator">*</span> nums<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+        dens<span class="token punctuation">.</span>append<span class="token punctuation">(</span>q <span class="token operator">*</span> dens<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dens<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+        <span class="token keyword">yield</span> nums<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> dens<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>  
+  
+  
+<span class="token keyword">def</span> <span class="token function">wiener_attack</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token triple-quoted-string string">""" Атака Винера для RSA с большим e и маленьким d. """</span>  
+    <span class="token keyword">for</span> k<span class="token punctuation">,</span> d <span class="token keyword">in</span> convergents<span class="token punctuation">(</span>continued_fraction<span class="token punctuation">(</span>e<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  
+        <span class="token keyword">if</span> k <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>  
+            <span class="token keyword">continue</span>  
+        phi <span class="token operator">=</span> <span class="token punctuation">(</span>e <span class="token operator">*</span> d <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">//</span> k  
+        b <span class="token operator">=</span> n <span class="token operator">-</span> phi <span class="token operator">+</span> <span class="token number">1</span>  
+        discriminant <span class="token operator">=</span> b <span class="token operator">*</span> b <span class="token operator">-</span> <span class="token number">4</span> <span class="token operator">*</span> n  
+        <span class="token keyword">if</span> discriminant <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>  
+            root_disc <span class="token operator">=</span> isqrt<span class="token punctuation">(</span>discriminant<span class="token punctuation">)</span>  
+            <span class="token keyword">if</span> root_disc <span class="token operator">*</span> root_disc <span class="token operator">==</span> discriminant<span class="token punctuation">:</span>  
+                p <span class="token operator">=</span> <span class="token punctuation">(</span>b <span class="token operator">+</span> root_disc<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>  
+                q <span class="token operator">=</span> <span class="token punctuation">(</span>b <span class="token operator">-</span> root_disc<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>  
+                <span class="token keyword">if</span> n <span class="token operator">==</span> p <span class="token operator">*</span> q<span class="token punctuation">:</span>  
+                    <span class="token keyword">return</span> d  
+    <span class="token keyword">return</span> <span class="token boolean">None</span>  
+  
+  
+<span class="token keyword">def</span> <span class="token function">decrypt</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span> d<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token triple-quoted-string string">""" Функция для расшифрования сообщения c с использованием приватного ключа d и модуля n. """</span>  
+    m <span class="token operator">=</span> <span class="token builtin">pow</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span> d<span class="token punctuation">,</span> n<span class="token punctuation">)</span>  
+    <span class="token keyword">return</span> m<span class="token punctuation">.</span>to_bytes<span class="token punctuation">(</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span>bit_length<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token string">'big'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>  
+  
+  
+<span class="token comment"># Основной блок  </span>
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>  
+    n <span class="token operator">=</span> <span class="token number">115527789319991047725489235818351464993028412126352156293595566838475726455437233607597045733180526729630017323042204168151655259688176759042620103271351321127634573342826484117943690874998234854277777879701926505719709998116539185109829000375668558097546635835117245793477957255328281531908482325475746699343</span>  
+    e <span class="token operator">=</span> <span class="token number">13961211722558497461053729553295150730315735881906397707707726108341912436868560366671282172656669633051752478713856363392549457910240506816698590171533093796488195641999706024628359906449130009380765013072711649857727561073714362762834741590645780746758372687127351218867865135874062716318840013648817769047</span>  
+  
+    d <span class="token operator">=</span> wiener_attack<span class="token punctuation">(</span>n<span class="token punctuation">,</span> e<span class="token punctuation">)</span>  
+    <span class="token keyword">if</span> d<span class="token punctuation">:</span>  
+        c <span class="token operator">=</span> <span class="token number">10313360406806945962061388121732889879091144213622952631652830033549291457030908324247366447011281314834409468891636010186191788524395655522444948812334378330639344393086914411546459948482739784715070573110933928620269265241132766601148217497662982624793148613258672770168115838494270549212058890534015048102</span>  
+        plaintext <span class="token operator">=</span> decrypt<span class="token punctuation">(</span>c<span class="token punctuation">,</span> d<span class="token punctuation">,</span> n<span class="token punctuation">)</span>  
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Расшифрованное сообщение:"</span><span class="token punctuation">,</span> plaintext<span class="token punctuation">)</span>  
+    <span class="token keyword">else</span><span class="token punctuation">:</span>  
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Не удалось найти d."</span><span class="token punctuation">)</span>
+</code></pre></div>
+</body>
+</html>
