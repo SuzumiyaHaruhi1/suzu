@@ -1,0 +1,326 @@
+<html>
+<head>
+  <title>wt_two</title>
+  <style>
+    
+:root {
+  --default-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: 'Source Code Pro', monospace;
+  --background-primary: #ffffff;
+  --background-modifier-border: #ddd;
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --text-muted: #888888;
+  --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --text-error: #E4374B;
+  --background-primary-alt: '#fafafa';
+  --background-accent: '';
+  --interactive-accent: hsl( 254,  80%, calc( 68% + 2.5%));
+  --background-modifier-error: #E4374B;
+}
+
+    body,input {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+code, kbd, pre {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 1em 0.5em;
+}
+
+table {
+  background: white;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+table thead th,
+table tfoot th {
+  text-align: left;
+  background-color: #eaeaea;
+  color: black;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table td {
+  color: #222222;
+}
+
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"]  .callout-title,
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="help"] .callout-title {
+  background-color: #828ee7;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  background-color: #34bbe6;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  background-color: #a3e048;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  background-color: #49da9a;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  background-color: #f7d038;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="missing"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  background-color: #eb7532;
+}
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  background-color: #e6261f;
+}
+.callout[data-callout="example"] .callout-title {
+  background-color: #d23be7;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  background-color: #aaaaaa;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+svg.svg-icon {
+  height: 18px;
+  width: 18px;
+  stroke-width: 1.75px;
+}
+
+.callout {
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.callout-title {
+  padding: .5em;
+  display: flex;
+  gap: 8px;
+  font-size: inherit;
+  color: black;
+  line-height: 1.3em;
+}
+
+.callout-title-inner {
+  font-weight: bold;
+  color: black;
+}
+
+.callout-content {
+  overflow-x: auto;
+  padding: 0.25em .5em;
+  color: #222222;
+  background-color: white !important;
+}
+
+ul.contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.contains-task-list ul.contains-task-list {
+  padding-left: 2em;
+}
+
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+.callout-table,
+.callout-table tr,
+.callout-table p {
+  width: 100%;
+  padding: 0;
+}
+
+.callout-table td {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.callout-table p {
+  padding-bottom: 0.5em;
+}
+
+.source-table {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+  </style>
+</head>
+<body>
+<div><p><a href="#REVERSE" class="tag" target="_blank" rel="noopener">#REVERSE</a> </p>
+<h1 data-heading="Описание задачи">Описание задачи</h1>
+<hr>
+<blockquote>
+<p>wtmoo but wt-two</p>
+</blockquote>
+<blockquote>
+<p><a data-tooltip-position="top" aria-label="https://tjctf-2024.storage.googleapis.com/uploads/195c0eb85692665c91157cdd5a8288e5fb48164ec3b073d934508da8804e82b8/wttwo" rel="noopener" class="external-link" href="https://tjctf-2024.storage.googleapis.com/uploads/195c0eb85692665c91157cdd5a8288e5fb48164ec3b073d934508da8804e82b8/wttwo" target="_blank">wttwo</a></p>
+</blockquote>
+<h1 data-heading="Получение флага">Получение флага</h1>
+<hr>
+<pre class="language-c" tabindex="0"><code class="language-c is-loaded"><span class="token keyword">int</span> __cdecl <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>envp<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>v3<span class="token punctuation">;</span> <span class="token comment">// rdx</span>
+  <span class="token keyword">char</span> v4<span class="token punctuation">;</span> <span class="token comment">// bl</span>
+  <span class="token keyword">int</span> v5<span class="token punctuation">;</span> <span class="token comment">// er12</span>
+  <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>v7<span class="token punctuation">;</span> <span class="token comment">// rdx</span>
+  <span class="token keyword">int</span> v8<span class="token punctuation">;</span> <span class="token comment">// eax</span>
+  <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>v9<span class="token punctuation">;</span> <span class="token comment">// rdx</span>
+  <span class="token keyword">int</span> v10<span class="token punctuation">;</span> <span class="token comment">// eax</span>
+  <span class="token keyword">char</span> s<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// [rsp+10h] [rbp-F0h] BYREF</span>
+  <span class="token keyword">int</span> v12<span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// [rsp+50h] [rbp-B0h]</span>
+  _DWORD v13<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// [rsp+CCh] [rbp-34h] BYREF</span>
+  <span class="token keyword">int</span> v14<span class="token punctuation">;</span> <span class="token comment">// [rsp+D8h] [rbp-28h]</span>
+  _DWORD envpa<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// [rsp+DCh] [rbp-24h] BYREF</span>
+  <span class="token keyword">int</span> v16<span class="token punctuation">;</span> <span class="token comment">// [rsp+ECh] [rbp-14h]</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span> argc <span class="token operator">!=</span> <span class="token number">1</span> <span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span> argc <span class="token operator">==</span> <span class="token number">3</span> <span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+      v14 <span class="token operator">=</span> <span class="token operator">*</span><span class="token punctuation">(</span>_DWORD <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">*</span>argv<span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token operator">!</span>v14 <span class="token operator">||</span> v14 <span class="token operator">==</span> <span class="token number">1</span> <span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      <span class="token operator">*</span><span class="token punctuation">(</span>_QWORD <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>v13<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token number">4uLL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      v13<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> v14 <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      v7 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span>v14 <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">(</span>_DWORD <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>v13<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>_DWORD<span class="token punctuation">)</span>v7<span class="token punctuation">;</span>
+      v16 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      v8 <span class="token operator">=</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>v13<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> v7<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      v16 <span class="token operator">+=</span> v8<span class="token punctuation">;</span>
+      v9 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">--</span>v13<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">(</span>_DWORD <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>v13<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> v13<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      v10 <span class="token operator">=</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>v13<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> v9<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> v10 <span class="token operator">+</span> v16<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+LABEL_13<span class="token operator">:</span>
+    <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"Wrong...\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0xFFFFFFFF</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"Guess my flag!!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">fgets</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> <span class="token number">0x31</span><span class="token punctuation">,</span> _bss_start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token function">strlen</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">0x1D</span> <span class="token punctuation">)</span>
+    <span class="token keyword">goto</span> LABEL_13<span class="token punctuation">;</span>
+  <span class="token operator">*</span><span class="token punctuation">(</span>_QWORD <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>envpa<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token number">4uLL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x75</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x6B</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x61</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x77</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x63</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x73</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x7A</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x61</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xF</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x43</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0xA</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x31</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0xB</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xF5</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0xC</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xC4</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0xD</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x10D</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0xE</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x215</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0xF</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x3B4</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x652</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x11</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xA77</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x12</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x103A</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x13</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x1A02</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x14</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x2AA3</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x15</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x455C</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x16</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x6FC5</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x17</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xB518</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x18</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x12534</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x19</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x1DA71</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x1A</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x2FF26</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x1B</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x4D915</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x1C</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0x7D8C6</span><span class="token punctuation">;</span>
+  v12<span class="token punctuation">[</span><span class="token number">0x1D</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xCB255</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span> envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token number">0x1D</span><span class="token punctuation">;</span> <span class="token operator">++</span>envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span>
+  <span class="token punctuation">{</span>
+    v3 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span>envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">(</span>_DWORD <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>envpa<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    v4 <span class="token operator">=</span> s<span class="token punctuation">[</span>envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    v5 <span class="token operator">=</span> v12<span class="token punctuation">[</span>envpa<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span> v4 <span class="token operator">!=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> __int8<span class="token punctuation">)</span>v5 <span class="token operator">^</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> __int8<span class="token punctuation">)</span><span class="token function">main</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>envpa<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> v3<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">)</span>
+      <span class="token keyword">goto</span> LABEL_13<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"Nice!!!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Анализ программы</strong>:</p>
+<ol>
+<li>Программа проверяет количество аргументов командной строки (<code>argc</code>). </li>
+<li>Если аргументов ровно 1, программа просит пользователя угадать флаг и считывает введенное значение. </li>
+<li>Если аргументов 3, выполняется рекурсивная функция с использованием значения первого аргумента<br>
+<strong>Рекурсивная функция</strong>:</li>
+<li>При <code>argc == 3</code>, программа рекурсивно вызывает саму себя, уменьшая значение первого аргумента (<code>v14</code>) на 1, и суммирует результаты вызовов. </li>
+<li>Основная функция программы выглядит как рекурсивное вычисление последовательности Фибоначчи.<br>
+<strong>Проверка флага</strong>:</li>
+<li>Программа ожидает, что введенный флаг будет длиной более 29 символов. </li>
+<li>Инициализируется массив <code>v12</code> с определенными значениями. </li>
+<li>Программа поочередно проверяет каждый символ введенного флага, сравнивая его с вычисленным значением.<br>
+<strong>Логика сравнения</strong>:</li>
+<li>Для каждого символа введенного флага, программа вызывает рекурсивную функцию и сравнивает результат с соответствующим значением из массива <code>v12</code>. </li>
+<li>Если хоть один символ не совпадает с ожидаемым значением, программа выводит "Wrong...". </li>
+<li>Если все символы совпадают, программа выводит "Nice!!!".<br>
+<strong>Значения в массиве <code>v12</code></strong>:</li>
+<li>Массив <code>v12</code> содержит определенные значения, с которыми символы флага должны совпасть после выполнения операции XOR с результатом рекурсивной функции.</li>
+</ol>
+<p>Рекурсивная функция фактически вычисляет последовательность Фибоначчи, где <code>F(n) = F(n-1) + F(n-2)</code> с базовыми случаями <code>F(0) = F(1) = 1</code>.</p>
+<pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token keyword">def</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> n <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">or</span> n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token number">1</span>
+    a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span>
+    <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        a<span class="token punctuation">,</span> b <span class="token operator">=</span> b<span class="token punctuation">,</span> a <span class="token operator">+</span> b
+    <span class="token keyword">return</span> b
+
+v12 <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token number">0x75</span><span class="token punctuation">,</span> <span class="token number">0x6B</span><span class="token punctuation">,</span> <span class="token number">0x61</span><span class="token punctuation">,</span> <span class="token number">0x77</span><span class="token punctuation">,</span> <span class="token number">0x63</span><span class="token punctuation">,</span> <span class="token number">0x73</span><span class="token punctuation">,</span> <span class="token number">0x7A</span><span class="token punctuation">,</span> <span class="token number">0x61</span><span class="token punctuation">,</span> <span class="token number">0x0F</span><span class="token punctuation">,</span> <span class="token number">0x43</span><span class="token punctuation">,</span> <span class="token number">0x31</span><span class="token punctuation">,</span> <span class="token number">0xF5</span><span class="token punctuation">,</span> <span class="token number">0xC4</span><span class="token punctuation">,</span> 
+    <span class="token number">0x10D</span><span class="token punctuation">,</span> <span class="token number">0x215</span><span class="token punctuation">,</span> <span class="token number">0x3B4</span><span class="token punctuation">,</span> <span class="token number">0x652</span><span class="token punctuation">,</span> <span class="token number">0xA77</span><span class="token punctuation">,</span> <span class="token number">0x103A</span><span class="token punctuation">,</span> <span class="token number">0x1A02</span><span class="token punctuation">,</span> <span class="token number">0x2AA3</span><span class="token punctuation">,</span> <span class="token number">0x455C</span><span class="token punctuation">,</span> <span class="token number">0x6FC5</span><span class="token punctuation">,</span> 
+    <span class="token number">0xB518</span><span class="token punctuation">,</span> <span class="token number">0x12534</span><span class="token punctuation">,</span> <span class="token number">0x1DA71</span><span class="token punctuation">,</span> <span class="token number">0x2FF26</span><span class="token punctuation">,</span> <span class="token number">0x4D915</span><span class="token punctuation">,</span> <span class="token number">0x7D8C6</span><span class="token punctuation">,</span> <span class="token number">0xCB255</span>
+<span class="token punctuation">]</span>
+
+flag <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>v12<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    fib <span class="token operator">=</span> fibonacci<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    char <span class="token operator">=</span> v12<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">^</span> fib
+    flag<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token builtin">chr</span><span class="token punctuation">(</span>char<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre><code>tjctf{wt-the-twoooooas48%@dfs}
+</code></pre></div>
+</body>
+</html>
